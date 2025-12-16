@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion} from 'motion/react'
+import { motion,  } from 'motion/react'
 
 const shapeVariants = {
     initial: {
@@ -10,7 +10,6 @@ const shapeVariants = {
         opacity: 1,
         y: 1,
         transition: {
-            delay: 1,
             duration: 1,
             type: 'spring'
         }
@@ -23,7 +22,7 @@ const childVariants = {
     },
     animate: {
         scale: 2,
-        transition: {duration: 2}
+        transition: { duration: 2 }
     }
 }
 
@@ -37,7 +36,7 @@ const Variants = () => {
         >
             <motion.div
                 variants={childVariants}
-                
+
                 className=' bg-red-600 w-10 h-10 rounded-full border border-white m-2  '
             ></motion.div>
         </motion.div>
